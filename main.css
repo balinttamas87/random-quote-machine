@@ -32,7 +32,10 @@ main {
   width: 90%; }
   @media only screen and (min-width: 540px) {
     .quote-wrapper {
-      width: 31.25%; } }
+      width: 75%; } }
+  @media only screen and (min-width: 786px) {
+    .quote-wrapper {
+      width: 50%; } }
 
 .button-wrapper {
   height: 35%;
