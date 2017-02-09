@@ -15,15 +15,12 @@
 
 	btnNewQuote.addEventListener("click", showNewQuote, false);
 	btnNewQuote.addEventListener("click", updateQuoteToTweet, false);
-	btnNewQuote.addEventListener("click", showAuthor, false);
 
-	function showQuote (theRandomQuote) {
+	function showQuoteAndAuthor (theRandomQuote,theAuthorOfRandomQuote) {
 		quote.innerHTML = theRandomQuote;
 		quote.style.visibility = "visible";
-	}
-
-	function showAuthor (theRandomArrayIndex) {
-		author.innerHTML = arrayOfQuotes[theRandomArrayIndex].author;
+		author.innerHTML = theAuthorOfRandomQuote;
+		author.style.visibility = "visible";
 	}
 
 		function updateQuoteToTweet () {
@@ -32,16 +29,16 @@
 
 	function showNewQuote () {
 		// if randomQuote is not defined here than I get undefined returned
-		var randomArrayIndex = Math.floor(Math.random() * arrayOfQuotes.length);
-		var randomQuote = arrayOfQuotes[randomArrayIndex].quote;
+		var randomIndexOfArray = Math.floor(Math.random() * arrayOfQuotes.length);
+		var randomQuote = arrayOfQuotes[randomIndexOfArray].quote;
+		var authorOfRandomQuote = arrayOfQuotes[randomIndexOfArray].author;
 
 		if (lastQuote === randomQuote) {
 			showNewQuote();
 		}
 		else if (lastQuote !== randomQuote) {
 			console.log( randomQuote );
-			showQuote(randomQuote);
-			showAuthor(randomArrayIndex);
+			showQuoteAndAuthor(randomQuote, authorOfRandomQuote);
 			lastQuote = randomQuote;
 		}
 	}
