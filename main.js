@@ -27,7 +27,7 @@
 	function showQuoteAndAuthor (theRandomQuote,theAuthorOfRandomQuote) {
 		quote.innerHTML = theRandomQuote;
 		quote.style.visibility = "visible";
-		author.innerHTML = theAuthorOfRandomQuote;
+		author.innerHTML = "- " + theAuthorOfRandomQuote;
 		author.style.visibility = "visible";
 		innerQuoteWrapper.style.visibility = "visible";
 	}
