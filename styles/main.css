@@ -29,7 +29,8 @@ main {
 .quote-wrapper {
   display: flex;
   flex-flow: column-reverse;
-  height: 35%;
+  min-height: 35%;
+  height: auto;
   width: 90%; }
   @media only screen and (min-width: 540px) {
     .quote-wrapper {
@@ -37,6 +38,13 @@ main {
   @media only screen and (min-width: 786px) {
     .quote-wrapper {
       width: 50%; } }
+
+.inner-quote-wrapper {
+  background-color: rgba(115, 67, 47, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  visibility: hidden; }
 
 .button-wrapper {
   height: 23.5%;
@@ -49,16 +57,14 @@ main {
   visibility: hidden;
   font-family: serif;
   width: 100%;
-  background-color: rgba(115, 67, 47, 0.5);
-  padding: 0.5rem; }
+  margin-bottom: 20px; }
 
 #author {
-  order: -1;
+  order: 0;
   align-self: flex-end;
   align-content: flex-end;
-  background-color: rgba(115, 67, 47, 0.5);
-  padding: 0.5rem;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  visibility: hidden; }
 
 button {
   height: 3rem;

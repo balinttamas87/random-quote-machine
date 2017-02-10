@@ -19,6 +19,7 @@
 	var quote = document.getElementById("quote");
 	var author = document.getElementById("author");
 	var btnTwitterShare = document.getElementById("twitter-share-button");
+	var innerQuoteWrapper = document.getElementById("inner-quote-wrapper");
 
 	btnNewQuote.addEventListener("click", showNewQuote, false);
 	btnNewQuote.addEventListener("click", updateQuoteToTweet, false);
@@ -28,6 +29,7 @@
 		quote.style.visibility = "visible";
 		author.innerHTML = theAuthorOfRandomQuote;
 		author.style.visibility = "visible";
+		innerQuoteWrapper.style.visibility = "visible";
 	}
 
 		function updateQuoteToTweet () {
