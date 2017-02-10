@@ -1,12 +1,7 @@
-// accessability colors: text - #010D39
-//                     : background - rgba(255, 165, 0, 0.5)
-// background2 - #73432F (0.4)
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	//border: 1px solid white;
 }
 html {
 	height: 100%;
@@ -34,17 +29,13 @@ main {
 .quote-wrapper {
 	display: flex;
 	flex-flow: column-reverse;
-	//background-color: rgba(#73432F, 0.5);
-	//border: 2px dashed orange;
 	min-height: 35%;
 	height: auto;
 	width: 90%;
 	@media only screen and (min-width: 540px) {
-		//font-size: 1.5rem;
 		width: 75%;
 	}
 	@media only screen and (min-width: 786px) {
-		//font-size: 1.5rem;
 		width: 50%;
 	}
 }
@@ -58,7 +49,6 @@ main {
 .button-wrapper {
 	height: 23.5%;
 	display: flex;
-	//border: 2px dashed orange;
 	margin: 1rem;
 }
 #quote {
@@ -68,19 +58,11 @@ main {
 	font-family: serif;
 	width: 100%;
 	margin-bottom: 20px;
-	//background-color: rgba(#73432F, 0.5);
-	//padding: 0.5rem;
-	// @media only screen and (min-width: 786px) {
-	// 	font-size: 1.5rem;
-	// 	width: 50%;
-	// }
 }
 #author {
 	order: 0;
 	align-self: flex-end;
 	align-content: flex-end;
-	//background-color: rgba(#73432F, 0.5);
-	//padding: 0.5rem;
 	font-size: 0.8rem;
 	font-style: italic;
 	visibility: hidden;
@@ -98,9 +80,6 @@ button {
 	&:focus {
 		outline: 0;
 	}
-}
-.quote-bg {
-	background-color: orange;
 }
 .fa-twitter {
 	color: white;

@@ -79,9 +79,6 @@ button {
   button:focus {
     outline: 0; }
 
-.quote-bg {
-  background-color: orange; }
-
 .fa-twitter {
   color: white;
   padding: 15px 5px 10px 5px; }
