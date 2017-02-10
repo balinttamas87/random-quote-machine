@@ -2,10 +2,17 @@
 
 (function () {
 
-	var arrayOfQuotes = [{author: "Elon Musk1", quote: "1Brand is just a perception, and perception will match reality over time. Sometimes it will be ahead, other times it will be behind. But brand is simply a collective impression some have about a product."},
-		{author: "Elon Musk2", quote: "2Patience is a virtue, and I'm learning patience. It's a tough lesson."},
-		{author: "Elon Musk3", quote: "3When something is important enough, you do it even if the odds are not in your favor."},
-		{author: "Elon Musk4", quote: "4I would like to die on Mars. Just not on impact."}];
+	var arrayOfQuotes = [{author: "Elon Musk", quote: "Brand is just a perception, and perception will match reality over time. Sometimes it will be ahead, other times it will be behind. But brand is simply a collective impression some have about a product."},
+		{author: "Elon Musk", quote: "Patience is a virtue, and I'm learning patience. It's a tough lesson."},
+		{author: "Elon Musk", quote: "When something is important enough, you do it even if the odds are not in your favor."},
+		{author: "Elon Musk", quote: "I would like to die on Mars. Just not on impact."},
+		{author: "Nelson Mandela", quote: "It always seems impossible until it's done."},
+		{author: "Johann Wolfgang von Goethe", quote: "It always seems impossible until it's done."},
+		{author: "Tony Robbins", quote: "Setting goals is the first step in turning the invisible into the visible."},
+		{author: "Aristotle", quote: "Quality is not and act, it is a habit"},
+		{author: "George S. Patton", quote: "Accept the challenges so that you can feel the exhilaration of victory."},
+		{author: "Mark Twain", quote: "The secret of getting ahead is getting started."},
+		{author: "Norman Vincent Peale", quote: "Change your thoughts and you change your world."}];
 
 	var lastQuote = "";
 	var btnNewQuote = document.getElementById("btnNewQuote");

@@ -33,6 +33,7 @@ main {
 }
 .quote-wrapper {
 	display: flex;
+	flex-direction: column;
 	//border: 2px dashed black;
 	height: 35%;
 	width: 90%;
@@ -63,6 +64,9 @@ main {
 	// 	font-size: 1.5rem;
 	// 	width: 50%;
 	// }
+}
+#author {
+	align-self: flex-end;
 }
 button {
 	height: 3rem;
